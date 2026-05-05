@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🛡️ Cyber Fraud Awareness</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <i class="fas fa-shield-halved"></i>
+      <span>CyberSafe</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#threats">Threats</a></li>
+      <li><a href="#prevention">Prevention</a></li>
+      <li><a href="#report">Report</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="glitch-wrapper">
+        <h1 class="glitch" data-text="CYBER FRAUD">CYBER FRAUD</h1>
+        <h1 class="glitch sub" data-text="AWARENESS">AWARENESS</h1>
+      </div>
+      <p class="hero-sub">Stay Informed. Stay Protected. Stay Safe Online.</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="6">0</span>
+          <span class="stat-label">Threat Types</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="1930">0</span>
+          <span class="stat-label">Helpline No.</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span>
+          <span class="stat-label">% Preventable</span>
+        </div>
+      </div>
+      <a href="#threats" class="cta-btn">
+        <span>Explore Threats</span>
+        <i class="fas fa-arrow-down"></i>
+      </a>
+      <div class="hero-bottom-row">
+        <div class="creator-badge">
+          <i class="fas fa-code"></i>
+          <span>Crafted by <strong>Harshvardhan</strong></span>
+          <span class="creator-sep">|</span>
+          <span class="creator-dept">BCA 6th A · GKU</span>
+        </div>
+        <button class="download-btn" id="downloadBtn">
+          <i class="fas fa-file-pdf"></i>
+          <span>Download Report</span>
+          <i class="fas fa-lock download-lock"></i>
+        </button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="shield-container">
+        <div class="shield-ring ring1"></div>
+        <div class="shield-ring ring2"></div>
+        <div class="shield-ring ring3"></div>
+        <div class="shield-icon">
+          <i class="fas fa-shield-halved"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-header">
+      <span class="section-tag">// ABOUT</span>
+      <h2>What is Cyber Fraud?</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card" data-aos="fade-up">
+        <div class="about-icon"><i class="fas fa-bug"></i></div>
+        <h3>Definition</h3>
+        <p>Cyber fraud refers to illegal activities carried out through computers, mobile devices, digital platforms, or communication networks in order to steal money, data, identity, or emotional security from users.</p>
+      </div>
+      <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="about-icon"><i class="fas fa-brain"></i></div>
+        <h3>How It Works</h3>
+        <p>Modern cyber criminals often do not break into systems by force. Instead, they misuse human behavior — creating fear, urgency, curiosity, greed, or trust to convince people to reveal information or transfer money.</p>
+      </div>
+      <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="about-icon"><i class="fas fa-users"></i></div>
+        <h3>Who Is at Risk?</h3>
+        <p>School students, college students, elderly people, shopkeepers, salaried employees, and homemakers can all become victims because fraudsters target human habits rather than only technical weaknesses.</p>
+      </div>
+    </div>
+    <div class="warning-banner">
+      <i class="fas fa-triangle-exclamation"></i>
+      <p>A single careless action — sharing an OTP, clicking a fake link, or trusting a duplicate account — can lead to financial loss, emotional stress, and identity misuse.</p>
+    </div>
+  </section>
+
+  <!-- Threats Section -->
+  <section id="threats" class="threats-section">
+    <div class="section-header">
+      <span class="section-tag">// THREATS</span>
+      <h2>Major Cyber Threats</h2>
+    </div>
+
+    <!-- Threat Cards -->
+    <div class="threats-grid">
+
+      <!-- OTP Fraud -->
+      <div class="threat-card" data-threat="otp">
+        <div class="card-inner">
+        <div class="card-front">
+          <div class="threat-icon"><i class="fas fa-mobile-screen-button"></i></div>
+          <h3>OTP Fraud</h3>
+          <p>Fraudsters trick you into sharing your One-Time Password to perform unauthorized transactions.</p>
+          <span class="learn-more">Click to Learn More <i class="fas fa-arrow-right"></i></span>
+        </div>
+        <div class="card-back">
+          <h3><i class="fas fa-mobile-screen-button"></i> OTP Fraud</h3>
+          <ul>
+            <li><i class="fas fa-circle-dot"></i> Fake bank verification calls</li>
+            <li><i class="fas fa-circle-dot"></i> KYC update scams</li>
+            <li><i class="fas fa-circle-dot"></i> UPI collect request scams</li>
+            <li><i class="fas fa-circle-dot"></i> SIM swap fraud</li>
+            <li><i class="fas fa-circle-dot"></i> Remote access fraud</li>
+          </ul>
+          <div class="card-rule">
+            <i class="fas fa-lock"></i> No genuine authority ever asks for your OTP
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Social Media Scams -->
+      <div class="threat-card" data-threat="social">
+        <div class="card-inner">
+        <div class="card-front">
+          <div class="threat-icon"><i class="fas fa-share-nodes"></i></div>
+          <h3>Social Media Scams</h3>
+          <p>Fraudsters use fake profiles on Instagram, Facebook, WhatsApp to steal money or personal info.</p>
+          <span class="learn-more">Click to Learn More <i class="fas fa-arrow-right"></i></span>
+        </div>
+        <div class="card-back">
+          <h3><i class="fas fa-share-nodes"></i> Social Media Scams</h3>
+          <ul>
+            <li><i class="fas fa-circle-dot"></i> Fake friend requests</li>
+            <li><i class="fas fa-circle-dot"></i> Romance scams</li>
+            <li><i class="fas fa-circle-dot"></i> Lottery / prize scams</li>
+            <li><i class="fas fa-circle-dot"></i> Fake job offers</li>
+            <li><i class="fas fa-circle-dot"></i> Investment fraud</li>
+          </ul>
+          <div class="card-rule">
+            <i class="fas fa-eye"></i> Verification must come before trust
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Phishing -->
+      <div class="threat-card" data-threat="phishing">
+        <div class="card-inner">
+        <div class="card-front">
+          <div class="threat-icon"><i class="fas fa-fish"></i></div>
+          <h3>Phishing</h3>
+          <p>Fake emails, messages, or websites trick users into sharing passwords, card numbers, or OTPs.</p>
+          <span class="learn-more">Click to Learn More <i class="fas fa-arrow-right"></i></span>
+        </div>
+        <div class="card-back">
+          <h3><i class="fas fa-fish"></i> Phishing Types</h3>
+          <ul>
+            <li><i class="fas fa-circle-dot"></i> Email phishing</li>
+            <li><i class="fas fa-circle-dot"></i> SMS phishing (Smishing)</li>
+            <li><i class="fas fa-circle-dot"></i> Voice phishing (Vishing)</li>
+            <li><i class="fas fa-circle-dot"></i> Spear phishing</li>
+            <li><i class="fas fa-circle-dot"></i> QR code phishing</li>
+          </ul>
+          <div class="card-rule">
+            <i class="fas fa-magnifying-glass"></i> Always verify sender & URL before clicking
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Online Banking Fraud -->
+      <div class="threat-card" data-threat="banking">
+        <div class="card-inner">
+        <div class="card-front">
+          <div class="threat-icon"><i class="fas fa-building-columns"></i></div>
+          <h3>Online Banking Fraud</h3>
+          <p>Unauthorized activities to steal money through internet banking, UPI, or mobile banking apps.</p>
+          <span class="learn-more">Click to Learn More <i class="fas fa-arrow-right"></i></span>
+        </div>
+        <div class="card-back">
+          <h3><i class="fas fa-building-columns"></i> Banking Fraud Types</h3>
+          <ul>
+            <li><i class="fas fa-circle-dot"></i> QR code fraud</li>
+            <li><i class="fas fa-circle-dot"></i> Fake customer care</li>
+            <li><i class="fas fa-circle-dot"></i> Card skimming</li>
+            <li><i class="fas fa-circle-dot"></i> Account takeover</li>
+            <li><i class="fas fa-circle-dot"></i> Malware-based attacks</li>
+          </ul>
+          <div class="card-rule">
+            <i class="fas fa-qrcode"></i> Scanning QR never receives money — it sends it
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Identity Theft -->
+      <div class="threat-card" data-threat="identity">
+        <div class="card-inner">
+        <div class="card-front">
+          <div class="threat-icon"><i class="fas fa-id-card"></i></div>
+          <h3>Identity Theft</h3>
+          <p>Criminals steal personal info to impersonate you, open accounts, or commit fraud in your name.</p>
+          <span class="learn-more">Click to Learn More <i class="fas fa-arrow-right"></i></span>
+        </div>
+        <div class="card-back">
+          <h3><i class="fas fa-id-card"></i> Identity Theft Sources</h3>
+          <ul>
+            <li><i class="fas fa-circle-dot"></i> Phishing & data breaches</li>
+            <li><i class="fas fa-circle-dot"></i> Stolen documents</li>
+            <li><i class="fas fa-circle-dot"></i> Oversharing on social media</li>
+            <li><i class="fas fa-circle-dot"></i> Insecure public Wi-Fi</li>
+            <li><i class="fas fa-circle-dot"></i> Discarded photocopies</li>
+          </ul>
+          <div class="card-rule">
+            <i class="fas fa-user-shield"></i> Personal info is valuable — treat it like money
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Cyberbullying -->
+      <div class="threat-card" data-threat="bullying">
+        <div class="card-inner">
+        <div class="card-front">
+          <div class="threat-icon"><i class="fas fa-comment-slash"></i></div>
+          <h3>Cyberbullying</h3>
+          <p>Repeated use of digital platforms to harass, threaten, or emotionally harm another person.</p>
+          <span class="learn-more">Click to Learn More <i class="fas fa-arrow-right"></i></span>
+        </div>
+        <div class="card-back">
+          <h3><i class="fas fa-comment-slash"></i> Warning Signs</h3>
+          <ul>
+            <li><i class="fas fa-circle-dot"></i> Fear of checking phone</li>
+            <li><i class="fas fa-circle-dot"></i> Withdrawal from online activity</li>
+            <li><i class="fas fa-circle-dot"></i> Unexplained sadness</li>
+            <li><i class="fas fa-circle-dot"></i> Falling academic performance</li>
+            <li><i class="fas fa-circle-dot"></i> Sleep disturbance</li>
+          </ul>
+          <div class="card-rule">
+            <i class="fas fa-heart"></i> Cyberbullying is real harm — seek support
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Psychology Section -->
+  <section class="psychology-section">
+    <div class="section-header">
+      <span class="section-tag">// HOW THEY TRICK YOU</span>
+      <h2>The Psychology of Cyber Fraud</h2>
+    </div>
+    <div class="psych-grid">
+      <div class="psych-item" data-aos="zoom-in">
+        <div class="psych-icon fear"><i class="fas fa-skull"></i></div>
+        <h4>FEAR</h4>
+        <p>"Your account will be blocked!"</p>
+      </div>
+      <div class="psych-item" data-aos="zoom-in" data-aos-delay="100">
+        <div class="psych-icon urgency"><i class="fas fa-clock"></i></div>
+        <h4>URGENCY</h4>
+        <p>"Share OTP now or lose access!"</p>
+      </div>
+      <div class="psych-item" data-aos="zoom-in" data-aos-delay="200">
+        <div class="psych-icon trust"><i class="fas fa-handshake"></i></div>
+        <h4>TRUST</h4>
+        <p>"I'm calling from your bank..."</p>
+      </div>
+      <div class="psych-item" data-aos="zoom-in" data-aos-delay="300">
+        <div class="psych-icon greed"><i class="fas fa-sack-dollar"></i></div>
+        <h4>GREED</h4>
+        <p>"You've won ₹10 lakh lottery!"</p>
+      </div>
+      <div class="psych-item" data-aos="zoom-in" data-aos-delay="400">
+        <div class="psych-icon sympathy"><i class="fas fa-heart-crack"></i></div>
+        <h4>SYMPATHY</h4>
+        <p>"I'm your friend, I need help urgently!"</p>
+      </div>
+      <div class="psych-item" data-aos="zoom-in" data-aos-delay="500">
+        <div class="psych-icon curiosity"><i class="fas fa-question"></i></div>
+        <h4>CURIOSITY</h4>
+        <p>"Click to see who viewed your profile!"</p>
+      </div>
+    </div>
+    <div class="psych-conclusion">
+      <i class="fas fa-lightbulb"></i>
+      <p>A calm response is the strongest defense. <strong>Stop. Think. Verify.</strong></p>
+    </div>
+  </section>
+
+  <!-- Prevention Section -->
+  <section id="prevention" class="prevention-section">
+    <div class="section-header">
+      <span class="section-tag">// PREVENTION</span>
+      <h2>How to Stay Safe</h2>
+    </div>
+    <div class="prevention-tabs">
+      <button class="tab-btn active" data-tab="general">General Safety</button>
+      <button class="tab-btn" data-tab="banking">Banking Safety</button>
+      <button class="tab-btn" data-tab="social">Social Media</button>
+      <button class="tab-btn" data-tab="identity">Identity Protection</button>
+    </div>
+    <div class="tab-content active" id="tab-general">
+      <div class="tips-grid">
+        <div class="tip-item"><i class="fas fa-key"></i><span>Use strong, unique passwords for every account</span></div>
+        <div class="tip-item"><i class="fas fa-shield-halved"></i><span>Enable two-factor authentication everywhere</span></div>
+        <div class="tip-item"><i class="fas fa-mobile-screen-button"></i><span>Never share OTP, PIN, or CVV with anyone</span></div>
+        <div class="tip-item"><i class="fas fa-link-slash"></i><span>Avoid clicking unknown or suspicious links</span></div>
+        <div class="tip-item"><i class="fas fa-rotate"></i><span>Keep devices and apps updated regularly</span></div>
+        <div class="tip-item"><i class="fas fa-wifi"></i><span>Avoid public Wi-Fi for sensitive transactions</span></div>
+        <div class="tip-item"><i class="fas fa-store"></i><span>Install apps only from official stores</span></div>
+        <div class="tip-item"><i class="fas fa-bell"></i><span>Enable transaction alerts on your accounts</span></div>
+      </div>
+    </div>
+    <div class="tab-content" id="tab-banking">
+      <div class="tips-grid">
+        <div class="tip-item"><i class="fas fa-building-columns"></i><span>Use only official banking apps and websites</span></div>
+        <div class="tip-item"><i class="fas fa-qrcode"></i><span>Remember: receiving money never needs a PIN</span></div>
+        <div class="tip-item"><i class="fas fa-phone"></i><span>Get customer care numbers from official bank website only</span></div>
+        <div class="tip-item"><i class="fas fa-credit-card"></i><span>Lock cards immediately if anything suspicious appears</span></div>
+        <div class="tip-item"><i class="fas fa-file-invoice-dollar"></i><span>Review account statements regularly</span></div>
+        <div class="tip-item"><i class="fas fa-desktop"></i><span>Remove screen-sharing apps from banking devices</span></div>
+        <div class="tip-item"><i class="fas fa-lock"></i><span>Set spending limits on cards where possible</span></div>
+        <div class="tip-item"><i class="fas fa-eye"></i><span>Read every payment request carefully before approving</span></div>
+      </div>
+    </div>
+    <div class="tab-content" id="tab-social">
+      <div class="tips-grid">
+        <div class="tip-item"><i class="fas fa-user-check"></i><span>Verify profiles before accepting requests</span></div>
+        <div class="tip-item"><i class="fas fa-phone-volume"></i><span>Call the person directly before sending money</span></div>
+        <div class="tip-item"><i class="fas fa-gear"></i><span>Use strong privacy settings on all platforms</span></div>
+        <div class="tip-item"><i class="fas fa-ban"></i><span>Block and report fake accounts immediately</span></div>
+        <div class="tip-item"><i class="fas fa-image"></i><span>Limit public posting of personal details</span></div>
+        <div class="tip-item"><i class="fas fa-magnifying-glass"></i><span>Verify before trusting any online message</span></div>
+        <div class="tip-item"><i class="fas fa-comment-slash"></i><span>Don't respond angrily to cyberbullying</span></div>
+        <div class="tip-item"><i class="fas fa-camera"></i><span>Save screenshots as evidence of harassment</span></div>
+      </div>
+    </div>
+    <div class="tab-content" id="tab-identity">
+      <div class="tips-grid">
+        <div class="tip-item"><i class="fas fa-id-card"></i><span>Share documents only through trusted channels</span></div>
+        <div class="tip-item"><i class="fas fa-scissors"></i><span>Shred physical copies of sensitive documents</span></div>
+        <div class="tip-item"><i class="fas fa-eye-slash"></i><span>Mask unnecessary details when sharing documents</span></div>
+        <div class="tip-item"><i class="fas fa-lock"></i><span>Lock your devices with strong screen locks</span></div>
+        <div class="tip-item"><i class="fas fa-envelope"></i><span>Monitor email and financial alerts regularly</span></div>
+        <div class="tip-item"><i class="fas fa-sliders"></i><span>Review social media privacy settings often</span></div>
+        <div class="tip-item"><i class="fas fa-database"></i><span>Minimize data shared on online forms</span></div>
+        <div class="tip-item"><i class="fas fa-triangle-exclamation"></i><span>Act immediately on unknown OTPs or loan notices</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Section -->
+  <section class="case-section">
+    <div class="section-header">
+      <span class="section-tag">// REAL CASES</span>
+      <h2>Case Studies</h2>
+    </div>
+    <div class="cases-container">
+      <div class="case-card">
+        <div class="case-badge otp-badge"><i class="fas fa-mobile-screen-button"></i> OTP Fraud</div>
+        <p class="case-story">"A working professional received a call from someone claiming to be a bank representative. The caller said urgent KYC verification was needed and asked for the OTP. Trusting the caller, the victim shared the code — and within minutes, a large amount was deducted from the account."</p>
+        <div class="case-lesson">
+          <i class="fas fa-lightbulb"></i>
+          <span>An OTP is a key to your account. Handing it to another person is equal to handing over control of the account itself.</span>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-badge social-badge"><i class="fas fa-share-nodes"></i> Social Media Scam</div>
+        <p class="case-story">"A student received an Instagram message from an account that looked exactly like a close friend's profile. The sender said there was an urgent financial problem and requested money immediately. The student transferred the amount and later discovered the real friend had sent no such message."</p>
+        <div class="case-lesson">
+          <i class="fas fa-lightbulb"></i>
+          <span>Not everything visible on social media is real. Always call and verify before sending money to anyone online.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Report Section -->
+  <section id="report" class="report-section">
+    <div class="section-header">
+      <span class="section-tag">// REPORT CYBER CRIME</span>
+      <h2>How to Report</h2>
+    </div>
+    <div class="report-grid">
+      <div class="report-card primary">
+        <div class="report-icon"><i class="fas fa-phone-volume"></i></div>
+        <h3>Cyber Crime Helpline</h3>
+        <div class="report-number">1930</div>
+        <p>Call immediately if you are a victim of cyber fraud. Available 24/7 across India.</p>
+      </div>
+      <div class="report-card">
+        <div class="report-icon"><i class="fas fa-globe"></i></div>
+        <h3>Online Portal</h3>
+        <div class="report-url">cybercrime.gov.in</div>
+        <p>File a detailed complaint online through the official Government of India cyber crime portal.</p>
+      </div>
+      <div class="report-card">
+        <div class="report-icon"><i class="fas fa-building-columns"></i></div>
+        <h3>Contact Your Bank</h3>
+        <div class="report-url">Immediately</div>
+        <p>Inform your bank, card issuer, and relevant platforms without delay to freeze transactions.</p>
+      </div>
+    </div>
+    <div class="report-steps">
+      <h3>Steps to Take After Cyber Fraud</h3>
+      <div class="steps-flow">
+        <div class="step"><span class="step-num">1</span><p>Stay calm and stop all transactions</p></div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="step"><span class="step-num">2</span><p>Change all passwords immediately</p></div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="step"><span class="step-num">3</span><p>Inform your bank & block cards</p></div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="step"><span class="step-num">4</span><p>Document everything (screenshots)</p></div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="step"><span class="step-num">5</span><p>Call 1930 or visit cybercrime.gov.in</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Hygiene Section -->
+  <section class="hygiene-section">
+    <div class="section-header">
+      <span class="section-tag">// DIGITAL HYGIENE</span>
+      <h2>Daily Safety Habits</h2>
+    </div>
+    <div class="hygiene-grid">
+      <div class="hygiene-item"><i class="fas fa-check-circle"></i><span>Review app permissions regularly</span></div>
+      <div class="hygiene-item"><i class="fas fa-check-circle"></i><span>Update operating systems promptly</span></div>
+      <div class="hygiene-item"><i class="fas fa-check-circle"></i><span>Check privacy settings on all platforms</span></div>
+      <div class="hygiene-item"><i class="fas fa-check-circle"></i><span>Delete suspicious messages immediately</span></div>
+      <div class="hygiene-item"><i class="fas fa-check-circle"></i><span>Log out from unused devices</span></div>
+      <div class="hygiene-item"><i class="fas fa-check-circle"></i><span>Monitor account alerts daily</span></div>
+      <div class="hygiene-item"><i class="fas fa-check-circle"></i><span>Use password managers</span></div>
+      <div class="hygiene-item"><i class="fas fa-check-circle"></i><span>Verify before you trust any message</span></div>
+    </div>
+    <div class="hygiene-quote">
+      <blockquote>
+        "Digital convenience should be used with digital discipline. Small daily precautions prevent major future losses."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <i class="fas fa-shield-halved"></i>
+        <h3>CyberSafe Awareness</h3>
+        <p>A Service Learning Project by <strong class="creator-name">Harshvardhan</strong><br/>BCA 6th A | Guru Kashi University, Talwandi Sabo</p>
+        <p class="footer-guide">Under the guidance of <strong>Jaspreet Kaur</strong>, Assistant Professor</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#threats">Threats</a></li>
+          <li><a href="#prevention">Prevention</a></li>
+          <li><a href="#report">Report</a></li>
+        </ul>
+      </div>
+      <div class="footer-emergency">
+        <h4>Emergency</h4>
+        <div class="emergency-number">
+          <i class="fas fa-phone-volume"></i>
+          <span>1930</span>
+        </div>
+        <p>National Cyber Crime Helpline</p>
+        <div class="emergency-url">cybercrime.gov.in</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Cyber Fraud Awareness | Session 2023-26 | Department of Computer Applications</p>
+      <p class="footer-motto">Stay Informed. Stay Protected. Stay Safe.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Password Modal -->
+  <div class="pwd-overlay" id="pwdOverlay">
+    <div class="pwd-modal">
+      <div class="pwd-modal-header">
+        <div class="pwd-icon-wrap">
+          <i class="fas fa-file-pdf"></i>
+        </div>
+        <button class="pwd-close" id="pwdClose"><i class="fas fa-xmark"></i></button>
+      </div>
+      <h3 class="pwd-title">Secure Download</h3>
+      <p class="pwd-subtitle">Enter password to access the report</p>
+      <div class="pwd-input-wrap" id="pwdInputWrap">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="pwdInput" placeholder="Enter password" maxlength="20" autocomplete="off" />
+        <button class="pwd-eye" id="pwdEye" type="button"><i class="fas fa-eye"></i></button>
+      </div>
+      <p class="pwd-error" id="pwdError"><i class="fas fa-triangle-exclamation"></i> Incorrect password</p>
+      <button class="pwd-submit" id="pwdSubmit">
+        <i class="fas fa-download"></i>
+        <span>Download PDF</span>
+      </button>
+      <p class="pwd-hint">Protected document · PDF</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
