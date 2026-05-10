@@ -1541,6 +1541,50 @@ section { position: relative; z-index: 1; padding: 7rem 6rem; }
   color: var(--neon-cyan);
 }
 
+.footer-team {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 255, 255, 0.2);
+  padding-top: 0.8rem;
+}
+
+.footer-team h4 {
+  color: var(--neon-cyan);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+}
+
+.team-table th {
+  text-align: left;
+  color: var(--neon-cyan);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.3rem 0.6rem;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.team-table td {
+  padding: 0.25rem 0.6rem;
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+
+.team-table td:last-child {
+  color: rgba(0, 255, 255, 0.7);
+  font-family: monospace;
+}
+
 .creator-name {
   color: var(--neon-cyan);
   font-weight: 600;
